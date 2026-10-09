@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+header {
+    background: #172554;
+    padding: 15px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img, footer img {
+    width: 60px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    display: none;
+}
+
+section, .laboratorio {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.inicio {
+    background: #dbeafe;
+    min-height: 400px;
+    padding-top: 130px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.laboratorios {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.laboratorios a {
+    background: #2563eb;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.laboratorio {
+    min-height: 500px;
+}
+
+.laboratorio a {
+    display: inline-block;
+    margin-top: 30px;
+    color: #2563eb;
+}
+
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+@media (max-width: 600px) {
+
+    button {
+        display: block;
+        background: none;
+        border: 0;
+        color: white;
+        font-size: 25px;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: #172554;
+        padding: 20px;
+    }
+
+    nav.activo {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+.info {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f1f5f9;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.info p {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.info p:last-child {
+    border-bottom: none;
+}
